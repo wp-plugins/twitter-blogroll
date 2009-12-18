@@ -15,7 +15,7 @@ Blogroll Twitter creates a list of links in the sidebar of our blog simulating a
 * Limit of friends list for 20 users.
 * Limit of followings for 100 users.
 * After links, show a link "view all" for see the rest of users.
-* Default size of 25px avatars.
+* Default avatars size 25px.
 * Show users by avatar or username.
 * If twitter user don't have a link of his blog, show a link to his twitter account.
 
