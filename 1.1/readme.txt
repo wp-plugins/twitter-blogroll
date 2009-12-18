@@ -29,19 +29,19 @@ Blogroll Twitter creates a list of links in the sidebar of our blog simulating a
 
 = How do I configure it? =
 
-<strong>Widget title:</strong> The title you like to assign to your blogroll.<br />
-<strong>Twitter user:</strong> Your username on twitter.<br />
-<strong>Twitter pass:</strong> The password that you use on twitter, you will need if you work with lists or if you have it protected.<br />
-<strong>Twitter list:</strong> The name of the twitter list from which to extract the links.<br />
-<strong>Show avatars:</strong> You can specify if you want that the link is displayed along with the avatar you use on twitter or if you prefer to be a text link with the user name.<br />
-<strong>Avatars size:</strong> If you show the avatar, here you can specify the size in pixels that will have these.<br />
+* Widget title: The title you like to assign to your blogroll.
+* Twitter user: Your username on twitter.
+* Twitter pass: The password that you use on twitter, you will need if you work with lists or if you have it protected.
+* Twitter list: The name of the twitter list from which to extract the links.
+* Show avatars: You can specify if you want that the link is displayed along with the avatar you use on twitter or if you prefer to be a text link with the user name.
+* Avatars size: If you show the avatar, here you can specify the size in pixels that will have these.
 
 == Screenshots ==
 
-<img src="http://plugins.svn.wordpress.org/twitter-blogroll/trunk/1.1/screenshot-1.png" alt="Configure" /><br />
-1. Image of the plugin configuration in Templates > Widgets.<br />
-<img src="http://plugins.svn.wordpress.org/twitter-blogroll/trunk/1.1/screenshot-2.png" alt="Example" /><br />
-2. Example of running widget.
+<img src="http://plugins.svn.wordpress.org/twitter-blogroll/trunk/1.1/screenshot-1.png" alt="Configure" />
+* Image of the plugin configuration in Templates > Widgets.
+<img src="http://plugins.svn.wordpress.org/twitter-blogroll/trunk/1.1/screenshot-2.png" alt="Example" />
+* Example of running widget.
 
 == Changelog ==
 
