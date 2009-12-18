@@ -3,6 +3,7 @@ Contributors: nnatali
 Tags: twitter, blogroll, list
 Requires at least: 2.0.2
 Tested up to: 2.9
+Stable tag: trunk
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=CBM4QHSLRMEPG&lc=ES&item_name=Plugin%20twitter%2dblogroll&currency_code=EUR
 
 Create a blogroll on our blog based on a list of twitter.
