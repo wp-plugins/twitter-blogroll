@@ -38,9 +38,9 @@ Blogroll Twitter creates a list of links in the sidebar of our blog simulating a
 
 == Screenshots ==
 
-<img src="http://plugins.svn.wordpress.org/twitter-blogroll/trunk/1.1/screenshot-1.png" alt="Configure" />
+screenshot-1.png
 * Image of the plugin configuration in Templates > Widgets.
-<img src="http://plugins.svn.wordpress.org/twitter-blogroll/trunk/1.1/screenshot-2.png" alt="Example" />
+screenshot-2.png
 * Example of running widget.
 
 == Changelog ==
