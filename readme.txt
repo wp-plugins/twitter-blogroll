@@ -2,7 +2,7 @@
 Contributors: nnatali
 Tags: twitter, blogroll, list
 Requires at least: 2.0.2
-Tested up to: 2.9.2
+Tested up to: 3.1
 Stable tag: trunk
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=CBM4QHSLRMEPG&lc=ES&item_name=Plugin%20twitter%2dblogroll&currency_code=EUR
 
@@ -38,12 +38,14 @@ Blogroll Twitter creates a list of links in the sidebar of our blog simulating a
 
 == Screenshots ==
 
-screenshot-1.png
 * Image of the plugin configuration in Templates > Widgets.
-screenshot-2.png
 * Example of running widget.
 
 == Changelog ==
 
 = 1.1 =
 * Added link "view all" links to the twitter list with all users added.
+= 1.2 =
+* 
+= 1.3 =
+* Solved problem with twitter authorization.

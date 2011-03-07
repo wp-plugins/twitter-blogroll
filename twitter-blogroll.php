@@ -3,7 +3,7 @@
 Plugin Name: Twitter Blogroll 
 Plugin URI: http://blog.nnatali.com/tag/twitter-blogroll/ 
 Description: Create a blogroll on our blog based on a list of twitter.  
-Version: 1.2 
+Version: 1.3 
 Author: nnatali 
 Author URI: http://www.nnatali.com 
 */  
@@ -19,17 +19,25 @@ function twitter_blogroll($twitter_user, $twitter_pass, $twitter_list, $list_ava
     else
 		$twitter_url="http://twitter.com/statuses/friends/".$twitter_user.".xml";
 		 
+	//auth
+	$consumer_key = "IbPrTwiHR0IH10vChxotQ";
+	$consumer_secret = "E9LgkaB5boUcB4JviPUZa6hH5LYYmWWIPdKIO9cDy0";
+	$access_key = "14880752-EIn0YB35j6qpaXh0dHX30Wfq96zr6jQ1VdGtfHN5x";
+	$access_secret = "uWVn2Joet8I3kFJQjw7gVb5JixzhS55A9nxor9Ya14";
+ 
+	require_once('twitteroauth/twitteroauth.php');
+	$twitter = new TwitterOAuth ($consumer_key ,$consumer_secret , $access_key , $access_secret );
 	
 	$ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $twitter_url);
     curl_setopt($ch, CURLOPT_VERBOSE, 0); // no imprimir nada
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_USERPWD, "$twitter_user:$twitter_pass"); // autenticación
     curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5); // para no esperar indefinidamente
     curl_setopt($ch, CURLOPT_GET, 1);
     $result = curl_exec($ch);
 	curl_close($ch);
+	
 
 	$replies=@simplexml_load_string($result);
 	
@@ -72,6 +80,8 @@ function twitter_blogroll($twitter_user, $twitter_pass, $twitter_list, $list_ava
 		echo '<p class="tb_all"><a href="http://twitter.com/'.$twitter_user.'/'.$twitter_list.'" title="view all">view all</a></p>';
 	else
 		echo '<p class="tb_all"><a href="http://twitter.com/'.$twitter_user.'/following" title="view all">view all</a></p>';
+		
+
 		
 }
 
