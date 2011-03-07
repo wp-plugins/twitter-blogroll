@@ -12,7 +12,7 @@ Author URI: http://www.nnatali.com
 define(TWITTER_BLOGROLL_WIDGET_ID, "widget_twitter_blogroll");  
   
 //funcion especifica   
-function twitter_blogroll($twitter_user, $twitter_pass, $twitter_list, $list_avatar, $size_avatar){
+function twitter_blogroll($twitter_user, $twitter_list, $list_avatar, $size_avatar){
 
 	if($twitter_list!='')
 		$twitter_url="http://api.twitter.com/1/".$twitter_user."/".$twitter_list."/members.xml";
@@ -92,7 +92,6 @@ function widget_twitter_blogroll($args) {
 
   $widget_title = $options["widget_title"];
   $twitter_user = $options["twitter_user"];
-  $twitter_pass = $options["twitter_pass"];
   $twitter_list = $options["twitter_list"];
   $list_avatar = $options["list_avatar"];
   $size_avatar = $options["size_avatar"];
@@ -100,7 +99,7 @@ function widget_twitter_blogroll($args) {
   echo $before_widget;
   echo $before_widget;
   echo $before_title . $widget_title . $after_title;
-  twitter_blogroll($twitter_user, $twitter_pass, $twitter_list, $list_avatar, $size_avatar);
+  twitter_blogroll($twitter_user, $twitter_list, $list_avatar, $size_avatar);
   echo $after_widget;
 }
 
@@ -124,7 +123,6 @@ function widget_twitter_blogroll_control() {
   if ($widget_data['submit']) {
     $options['widget_title'] = $widget_data['widget_title'];
 	$options['twitter_user'] = $widget_data['twitter_user'];
-	$options['twitter_pass'] = $widget_data['twitter_pass'];
     $options['twitter_list'] = $widget_data['twitter_list'];
 	$options['list_avatar'] = $widget_data['list_avatar'];
 	$options['size_avatar'] = $widget_data['size_avatar'];
@@ -135,7 +133,6 @@ function widget_twitter_blogroll_control() {
   // Parametros de la funcion
   $widget_title = $options['widget_title'];
   $twitter_user = $options['twitter_user'];
-  $twitter_pass = $options['twitter_pass'];
   $twitter_list = $options['twitter_list'];
   $list_avatar = $options['list_avatar'];
   $size_avatar = $options['size_avatar'];
@@ -161,15 +158,6 @@ function widget_twitter_blogroll_control() {
 		name="<?php echo TWITTER_BLOGROLL_WIDGET_ID; ?>[twitter_user]" 
 		id="<?php echo TWITTER_BLOGROLL_WIDGET_ID; ?>-twitter-user" 
 		value="<?php echo $twitter_user; ?>"/>
-	</p>
-	<p>
-	  <label for="<?php echo TWITTER_BLOGROLL_WIDGET_ID;?>-twitter-pass">
-		Twitter pass:
-	  </label>
-	  <input class="widefat" type="password" 
-		name="<?php echo TWITTER_BLOGROLL_WIDGET_ID; ?>[twitter_pass]" 
-		id="<?php echo TWITTER_BLOGROLL_WIDGET_ID; ?>-twitter-pass" 
-		value="<?php echo $twitter_pass; ?>"/>
 	</p>
 	<p>
 	  <label for="<?php echo TWITTER_BLOGROLL_WIDGET_ID;?>-twitter-list">
